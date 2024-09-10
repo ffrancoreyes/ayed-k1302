@@ -1,0 +1,3 @@
+#ignoramos todas las carpetas innecesarias para subir a github.
+output/
+.vscode/

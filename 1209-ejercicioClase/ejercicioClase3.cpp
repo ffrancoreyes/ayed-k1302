@@ -81,10 +81,12 @@ int main() {
             << ", DNI: " << r.DNI << endl;
             
             
+        } else{
+            cout << "No se pudo completar el proceso" << endl;
         }
     
 
-
+        fread(&r, sizeof(r), 1, f);
     }
     cantidadRegistros = contarRegistros(f);
 

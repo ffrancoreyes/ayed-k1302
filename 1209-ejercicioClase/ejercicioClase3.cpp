@@ -64,7 +64,7 @@ int main() {
     fread(&r, sizeof(r), 1, f);
 
     while (!feof(f)) {
-        if(strcmp(r.prueba,"21K") == 0){
+        if(strcmp(r.prueba,"21k") == 0){
             fwrite(&r,sizeof(r), 1, w);
             cout << "Nombre y apellido: " << r.NombreApellido << ", Prueba: "
             << r.prueba << ", Sexo: " << r.sexo << ", Nro de Inscripcion: "
@@ -72,7 +72,7 @@ int main() {
             << ", DNI: " << r.DNI << endl; 
                 
             
-        } else if(strcmp(r.prueba,"42K") == 0){
+        } else if(strcmp(r.prueba,"42k") == 0){
             fwrite(&r,sizeof(r), 1, j);
             
             cout << "Nombre y apellido: " << r.NombreApellido << ", Prueba: "

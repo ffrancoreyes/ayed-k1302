@@ -61,13 +61,14 @@ int main() {
 
 
 
+
     fread(&r, sizeof(r), 1, f);
 
     while (!feof(f)) {
         if(strcmp(r.prueba,"21k") == 0){
             fwrite(&r,sizeof(r), 1, w);
             cout << "Nombre y apellido: " << r.NombreApellido << ", Prueba: "
-            << r.prueba << ", Sexo: " << r.sexo << ", Nro de Inscripcion: "
+            << r.prueba << ", Sexo: " << r.sexo << ", Nro de Inscripcion: " 
             << r.NroInscripcion << ", Posicion: " << r.posicion
             << ", DNI: " << r.DNI << endl; 
                 

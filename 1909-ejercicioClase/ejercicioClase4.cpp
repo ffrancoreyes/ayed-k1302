@@ -62,7 +62,7 @@ int main() {
             fwrite(&k21,sizeof(k21), 1, q);
             cout << "Nro de Inscripcion: " << k21.NroInscripcion << ", Nombre y apellido: "
             << k21.NombreApellido << ", Sexo: " << k21.sexo << ", DNI: " << k21.DNI << endl;
-            //prueba
+            
         } 
 		
 		if(k21.NroInscripcion > k42.NroInscripcion){
@@ -80,17 +80,17 @@ int main() {
             }
             
         }
-        else if(feof(j)){
+        else if(!feof(j)){
             while(fread(&k21, sizeof(k21), 1, w) == 1){
                 fwrite(&k21,sizeof(k21), 1, q);
                 cout << "Nro de Inscripcion: " << k21.NroInscripcion << ", Nombre y apellido: "
                 << k21.NombreApellido << ", Sexo: " << k21.sexo << ", DNI: " << k21.DNI << endl;
-        }
-        
             }
+        
         }
-        return 0;
     }
+        return 0;
+}
 
 // Cerrar los archivos
   

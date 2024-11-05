@@ -39,6 +39,7 @@ void mostrarMenu(){
         case 1:
             cout <<"Ingrese el valor que desea agregar a la cola: "; cin >> dato;
             insertarCola(frente, fin, dato);
+            system("pause");
             break;
         case 2:
             while(frente != NULL){
@@ -49,9 +50,10 @@ void mostrarMenu(){
                     cout << dato << endl;
                 }
             }
+            system("pause");
             break;
         }
-
+    system("cls");
     }while(opr != 3);
 }
 
